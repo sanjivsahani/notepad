@@ -23,7 +23,7 @@ lest use The api
 
 For creating a new user (method -- POST)
 
-API 1 --> http://localhost:5000/api/auth/createuser
+API 1 --> http://localhost:5000/api/auth/singup
 
  header type (content type - application json)
 
