@@ -8,6 +8,7 @@ var fetchuser = require('../middleware/fetchuser');
 
 const JWT_SECRET = 'S&&scM_d%$#Wboat';
 
+// working directory is hate 
 
 // ROUTE 1: Create a User using: POST "/api/auth/singup". No login required
 router.post('/singup', [
