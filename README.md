@@ -1,4 +1,4 @@
- # NOTEPAD 
+  # NOTEPAD 
 
   Notepad backend is based  on mern stack project ,it is full stack CURD opration with a database (Using MongoDb)
 
@@ -102,37 +102,64 @@ importance!
  ```
 Authirization :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
+# Product Routs :- 
+_____________________________________________________________
+ ## API 4 - To create a new product  
 
-```
-
------------------------------------------------------------------------- 
-  ## 2.Product routes
--------------------------------------------------------------------------
- 
- ## API 1  :  For creating the New product   
- 
-http://localhost:5000/api/auth/singup
-```
-`(method -- POST)`
+ ```
+ http://localhost:5000/api/product/createProduct
+ ```
+ `(method -- POST)`
 
  `header type (content type - application json)`
 
-## Validation
+`Authorazation: authtoken`
+## validation
+
+ 
 
 
-` name : name should be at least 3 character`
+`name  : name should be an name `
 
-` email : email should be an email `
+`quantity  : modelNo should be number `
 
-` password: password should be at lest 5 character`
+`price  : price should be an number `
+
+`modelNo  : modelNo  should be an number `
 
 ` EXAMPLE DATA `
 ```
-
-"name:"sanjiv",
-"email:"sanjv@gmail.com",
-"password":"123456"
-
+{
+  "name":"iPhone",
+  "quantity":"2",
+  "price":"1020",
+  "modelNo":"101ll"
+}
 ```
+ ## API 5 - Get The All Product   
 
---------------
+ ```
+ http://localhost:5000/api/product/getproduct
+ ```
+ `(method -- GET)`
+
+ `header type (content type - application json)`
+
+`Authorazation: authtoken`
+## validation
+
+`No validation`
+
+ Getting Responce
+```
+[
+  {
+    "_id": "6326e971ca033e21964e8b8b",
+    "name": "iPhone",
+    "quantity": 2,
+    "price": 1020,
+    "modelNo": "101ll",
+    "__v": 0
+  }
+]
+```

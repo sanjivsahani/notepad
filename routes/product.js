@@ -52,7 +52,7 @@ router.post('/createProduct', authuser,[
 });
 //  Rote no --> 3 Route for Update product
 
-router.post('/updateproduct/:id',authuser , async (req, res) => {
+router.put('/updateproduct/:id',authuser , async (req, res) => {
   const { name,quantity,price,modelNo } = req.body;
 
   try {
