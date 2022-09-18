@@ -87,7 +87,7 @@ http://localhost:5000/api/auth/login
 -------------
  For getting the user data (Method POST)
 
-## API 2 : Get the user detail 
+## API 3 : Get the user detail 
 ``` 
 http://localhost:5000/api/auth/getuser
 ````
