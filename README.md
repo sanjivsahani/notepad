@@ -87,7 +87,7 @@ http://localhost:5000/api/auth/login
 -------------
  For getting the user data (Method POST)
 
- API 3 -->
+## API 2 : Get the user detail 
 ``` 
 http://localhost:5000/api/auth/getuser
 ````
@@ -162,4 +162,46 @@ _____________________________________________________________
     "__v": 0
   }
 ]
+```
+ ## API 6 - To Update  a Product   
+
+ ```
+ http://localhost:5000/api/product/updateproduct/:ID
+ ```
+ `(method -- PUT)`
+
+ `header type (content type - application json)`
+
+`Authorazation: authtoken`
+## validation
+
+`Update the existing Product detail `
+
+ 
+```
+
+  {
+    "_id": "6326e971ca033e21964e8b8b",
+    "name": "iPhone", 
+    "quantity": 2,
+    "price": 1020,
+    "modelNo": "101ll",
+    "__v": 0
+  }
+
+```
+## API 7 - To Delete  a Product   
+
+ ```
+ http://localhost:5000/api/product/deleteproduct/:ID
+ ```
+ `(method -- Delete)`
+
+ `header type (content type - application json)`
+
+`Authorazation: authtoken`
+
+`Getting response`
+```
+"the Product has been deleted"
 ```
