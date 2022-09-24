@@ -6,4 +6,4 @@ const connectToMongo = ()=>{
         console.log("server is UP mongoDb is Connected")
     }))
 }
-module.exports = connectToMongo
+module.exports = connectToMongo;
