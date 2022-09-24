@@ -1,5 +1,5 @@
 const mongoose = require ('mongoose')
-MongoURI = 'mongodb://localhost:27017/notepad?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'
+MongoURI = 'mongodb+srv://user:user123@cluster0.tz7r3ph.mongodb.net/?retryWrites=true&w=majority'
 
 const connectToMongo = ()=>{
     mongoose.connect(MongoURI,(()=>{
